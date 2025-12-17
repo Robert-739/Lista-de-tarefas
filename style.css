@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.task-input input[type="text"] { flex: 3; padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
+.task-input input[type="time"] { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
+
+.task-input button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#listaDeTarefas { list-style: none; padding: 0; }
+
+#listaDeTarefas li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaDeTarefas li.alarme-tocando {
+    background-color: #ffcccc;
+    animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+    from { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4); }
+    to { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+}
+
+.detalhes-tarefa { display: flex; flex-direction: column; text-align: left; }
+.btn-remover { background-color: #dc3545; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; }
