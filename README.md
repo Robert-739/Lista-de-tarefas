@@ -17,4 +17,5 @@ Ajudar na organização de tarefas diárias através de notificações e alarmes
 
 ## Como executar
 Abra o arquivo `index.html` no navegador.
+
 Adicione a tarefa e o horário.
